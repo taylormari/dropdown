@@ -1,0 +1,46 @@
+
+
+.dropbtn {
+  
+  background-color: yellow;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lightblue;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+.dropdown-content {
+  display: none; /* to not show before clicking */
+  position: relative; /* if absolute, will overlap text below, hover over by setting z-index*/
+  background-color: white;
+  
+  overflow: auto; 
+  box-shadow: none;
+  z-index: 0;
+  align-content: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /*max-width: 200px;*/
+
+}
+
+.dropdown a:hover {background-color: blue;}
+
+.show {display: block;}

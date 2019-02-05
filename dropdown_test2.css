@@ -1,0 +1,58 @@
+
+nav {
+  font-family: monospace;
+  margin-top: 15%;
+  margin-right: 15%;
+  padding: 10px;
+
+}
+
+ul {
+  margin:0;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+li {
+ display: block;
+ transition-duration: 0.5s; /*fancy smooth color change */
+ float: right;
+ position: relative;
+ text-decoration: none;
+ background: orange;
+ padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+li:hover {
+  cursor: pointer;
+  background: yellow;
+}
+
+.dropdown_menu {
+  position: absolute;
+  transition: all 0.5s ease; /*fancy smooth color change */
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+li:hover > ul { /* the child ul of the list that responds on hover, appear*/ 
+  opacity: 1;
+  display: block;
+}
+
+.dropdown_menu li {
+  width: 100%;
+}
+
+.text {
+  float: right;
+  clear: both;
+  margin-right: 15%;
+}
